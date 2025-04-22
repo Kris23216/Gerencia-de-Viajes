@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: Gerencia-de-Viajes
+    runtime: java
+    buildCommand: mvn clean package  # Compila con Maven
+    startCommand: java -jar target/Gerencia-de-Viajes.jar  # Ejecuta el .jar
+    env: java
+    database:
+      name: mysql-db
+      plan: free  # O pago si necesitas más recursos
